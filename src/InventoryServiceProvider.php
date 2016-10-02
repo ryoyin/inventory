@@ -13,7 +13,7 @@ class InventoryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        echo 123;
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**
