@@ -19,15 +19,10 @@ class InventoryController extends Controller
 //        echo $this->inventory->sayHi();
 
         $item = Item::find(1)->first();
-//        $warehouse = Warehouse::find(1)->first();
-//        dd($warehouse);
-//        $item->warehouses()->attach($warehouse->id, ['quantity' => 0]);
 
-        foreach ($item->warehouses as $warehouse) {
-            echo 'name: '.$warehouse->name;
-            echo '<br>';
-            echo 'quantity: '.$warehouse->pivot->quantity;
-        }
+        $getWarehouse = $item->warehouses()->where('inventory_warehouse_id', 1)->first();
+        $getWarehouse->pivot->quantity = 5;
+        $getWarehouse->pivot->save();
 
     }
 
