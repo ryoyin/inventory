@@ -1,11 +1,23 @@
-"# inventory" 
+# Inventory (Laravel 5 Package)
 
-1.Install via composer
-composer require ryoyin/inventory dev-master
+This package is under development. Please come back later.
 
-Or
-edit composer.json
-add "ryoyin/inventory": "dev-master" to require
-add "Ryoyin\\Inventory\\":"vendor/ryoyin/inventory/src" to autoload > psr-4
+- [Installation](#installation)
 
-2. Add "Ryoyin\Inventory\InventoryServiceProvider::class," to config\app.php
+##Installation
+
+In order to install Laravel 5 Entrust, just add
+
+    "ryoyin/inventory": "dev-master"
+
+to your composer.json. Then run `composer install` or `composer update`.
+
+or you can run the `composer require` command from your terminal:
+    
+    composer require ryoyin/inventory dev-master
+    
+Then in your config/app.php add
+
+    "Ryoyin\Inventory\InventoryServiceProvider::class,"
+    
+in the providers array
