@@ -1,0 +1,13 @@
+{
+    "name": "ryoyin/inventory",
+    "description": "Inventory System",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Roy Ho",
+            "email": "kwanyin2000@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
