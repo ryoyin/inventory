@@ -18,6 +18,9 @@ class InventoryController extends Controller
     {
 //        echo $this->inventory->sayHi();
 
+        echo 123;
+        exit;
+
         $item = Item::find(1)->first();
 
         $getWarehouse = $item->warehouses()->where('inventory_warehouse_id', 1)->first();
