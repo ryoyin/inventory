@@ -16,8 +16,14 @@ or you can run the `composer require` command from your terminal:
     
     composer require ryoyin/inventory dev-master
     
+Then in your composer.json add
+
+    "Ryoyin\\Inventory\\": "vendor/ryoyin/inventory/src/"
+    
+in the autoload > psr-4
+
 Then in your config/app.php add
 
-    "Ryoyin\Inventory\InventoryServiceProvider::class,"
+    Ryoyin\Inventory\InventoryServiceProvider::class,
     
 in the providers array
