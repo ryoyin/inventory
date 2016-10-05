@@ -18,6 +18,8 @@ class CreateInventoryItemsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->longText('description');
+            $table->string('sku');
+            $table->string('model_no');
             $table->smallInteger('category_id')->nullable();
             $table->enum('status', ['pending', 'normal', 'suspend', 'discontinue']);
             $table->softDeletes();
