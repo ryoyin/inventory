@@ -3,6 +3,7 @@
     "description": "Inventory System",
     "keywords": ["laravel", "inventory"],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Roy Ho",
@@ -15,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ryoyin\\Inventory\\":"src"
+            "Ryoyin\\Inventory\\":"src/"
         }
     }
 }
