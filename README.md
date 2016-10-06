@@ -5,7 +5,7 @@ This package is under development. Please come back later.
 - [Installation](#installation)
 
 ##Installation
-In order to install Laravel 5 Entrust, just add
+In order to install this package, you need laravel 5 and add
 
     "ryoyin/inventory": "dev-master"
 
