@@ -16,17 +16,14 @@ class InventoryController extends Controller
 
     public function index()
     {
-//        echo $this->inventory->sayHi();
-
-        echo 123;
-        exit;
-
         $item = Item::find(1)->first();
 
-        $getWarehouse = $item->warehouses()->where('inventory_warehouse_id', 1)->first();
-        $getWarehouse->pivot->quantity = 5;
-        $getWarehouse->pivot->save();
+        dd($item);
 
+        //update intermedia
+        /*$getWarehouse = $item->warehouses()->where('inventory_warehouse_id', 1)->first();
+        $getWarehouse->pivot->quantity = 5;
+        $getWarehouse->pivot->save();*/
     }
 
     public function store(Request $request)
