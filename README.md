@@ -32,7 +32,7 @@ It will install 3 tables to your database "items", "warehouse" and "warehouse_it
 
 To custom template, run
 
-    php artisan vendor:publish
+    php artisan vendor:publish --tag=ryoyin-inventory
     
 two view file will copy to your view directory
 

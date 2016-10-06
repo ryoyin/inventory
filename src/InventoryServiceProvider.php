@@ -15,6 +15,12 @@ class InventoryServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadViewsFrom(__DIR__.'/views', 'inventory');
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/views' => resource_path('views/vendor/inventory'),
+            ], 'ryoyin-inventory');
+        }
     }
 
     /**
