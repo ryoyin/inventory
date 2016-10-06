@@ -11,6 +11,7 @@ class InventoryController extends Controller
 
     function __construct(Inventory $inventory)
     {
+        $this->middleware('web');
         $this->inventory = $inventory;
     }
 

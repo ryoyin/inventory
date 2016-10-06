@@ -10,7 +10,7 @@ class ItemController extends Controller
 
     function __construct()
     {
-
+        $this->middleware('web');
     }
 
     public function index()
