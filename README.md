@@ -37,7 +37,8 @@ To custom template, run
 two view file will copy to your view directory
 
 #Routing
-inventory/item to access the CRUD item view
+
+    inventory/item to access the CRUD item view
 
 #How to use
 Access Item model:
