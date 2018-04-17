@@ -17,10 +17,5 @@
         "psr-4": {
             "Ryoyin\\Inventory\\":"src/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "develop"
-        }
     }
 }
