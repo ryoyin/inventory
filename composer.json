@@ -3,6 +3,7 @@
     "description": "Inventory System",
     "keywords": ["laravel", "inventory"],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Roy Ho",
